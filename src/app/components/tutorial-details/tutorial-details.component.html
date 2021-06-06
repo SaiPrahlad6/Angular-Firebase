@@ -29,7 +29,7 @@
   </form>
 
   <button
-    class="badge badge-primary mr-2"
+    class="btn btn-danger mr-2"
     *ngIf="currentTutorial.published"
     (click)="updatePublished(false)"
   >
@@ -43,11 +43,11 @@
     Publish
   </button>
 
-  <button class="badge badge-danger mr-2" (click)="deleteTutorial()">
+  <button class="btn btn-primary mr-2" (click)="deleteTutorial()">
     Delete
   </button>
 
-  <button type="submit" class="badge badge-success" (click)="updateTutorial()">
+  <button type="submit" class="btn btn-success" (click)="updateTutorial()">
     Update
   </button>
   <p>{{ message }}</p>
